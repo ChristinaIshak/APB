@@ -24,3 +24,8 @@ C:\Users\User\source\repos\AplikasiPinjamBuku(APB)\AplikasiPinjamBuku(APB)\obj\D
 C:\Users\User\source\repos\AplikasiPinjamBuku(APB)\AplikasiPinjamBuku(APB)\obj\Debug\AplikasiPinjamBuku(APB).csproj.CopyComplete
 C:\Users\User\source\repos\AplikasiPinjamBuku(APB)\AplikasiPinjamBuku(APB)\obj\Debug\AplikasiPinjamBuku_APB_.Dashboard.resources
 C:\Users\User\source\repos\AplikasiPinjamBuku(APB)\AplikasiPinjamBuku(APB)\obj\Debug\AplikasiPinjamBuku_APB_.Peminjaman.resources
+C:\Users\User\source\repos\AplikasiPinjamBuku(APB)\AplikasiPinjamBuku(APB)\obj\Debug\AplikasiPinjamBuku_APB_.Buku.resources
+C:\Users\User\source\repos\AplikasiPinjamBuku(APB)\AplikasiPinjamBuku(APB)\obj\Debug\AplikasiPinjamBuku_APB_.Anggota.resources
+C:\Users\User\source\repos\AplikasiPinjamBuku(APB)\AplikasiPinjamBuku(APB)\obj\Debug\AplikasiPinjamBuku_APB_.TambahBuku.resources
+C:\Users\User\source\repos\AplikasiPinjamBuku(APB)\AplikasiPinjamBuku(APB)\obj\Debug\AplikasiPinjamBuku_APB_.Pengembalian.resources
+C:\Users\User\source\repos\AplikasiPinjamBuku(APB)\AplikasiPinjamBuku(APB)\obj\Debug\AplikasiPinjamBuku_APB_.TambahAnggota.resources

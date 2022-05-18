@@ -107,7 +107,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(124, 473);
+            this.panel1.Size = new System.Drawing.Size(124, 512);
             this.panel1.TabIndex = 0;
             // 
             // labelLogout
@@ -142,11 +142,12 @@
             this.labelBuku.Size = new System.Drawing.Size(36, 13);
             this.labelBuku.TabIndex = 18;
             this.labelBuku.Text = "Buku";
+            this.labelBuku.Click += new System.EventHandler(this.labelBuku_Click);
             // 
             // pictureBox10
             // 
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(15, 150);
+            this.pictureBox10.Location = new System.Drawing.Point(15, 151);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(12, 10);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -163,11 +164,12 @@
             this.labelAnggota.Size = new System.Drawing.Size(54, 13);
             this.labelAnggota.TabIndex = 16;
             this.labelAnggota.Text = "Anggota";
+            this.labelAnggota.Click += new System.EventHandler(this.labelAnggota_Click);
             // 
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(15, 130);
+            this.pictureBox7.Location = new System.Drawing.Point(15, 132);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(12, 10);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -338,7 +340,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.Silver;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(124, 459);
+            this.panel3.Location = new System.Drawing.Point(124, 498);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(596, 14);
             this.panel3.TabIndex = 2;
@@ -473,7 +475,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(720, 473);
+            this.ClientSize = new System.Drawing.Size(720, 512);
             this.Controls.Add(this.labelTotalPengembalian);
             this.Controls.Add(this.labelTotalBuku);
             this.Controls.Add(this.labelTotalPeminjaman);

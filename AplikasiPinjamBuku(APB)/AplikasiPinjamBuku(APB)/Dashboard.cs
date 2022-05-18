@@ -37,5 +37,19 @@ namespace AplikasiPinjamBuku_APB_
             Dashboard panggil = new Dashboard();
             panggil.Show();
         }
+
+        private void labelBuku_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Buku panggil = new Buku();
+            panggil.Show();
+        }
+
+        private void labelAnggota_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Anggota panggil = new Anggota();
+            panggil.Show();
+        }
     }
 }

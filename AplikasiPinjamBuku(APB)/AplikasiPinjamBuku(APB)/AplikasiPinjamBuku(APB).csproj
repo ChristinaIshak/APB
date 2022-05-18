@@ -54,6 +54,42 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Buku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buku.Designer.cs">
+      <DependentUpon>Buku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Anggota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anggota.Designer.cs">
+      <DependentUpon>Anggota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profil.Designer.cs">
+      <DependentUpon>Profil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pengembalian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pengembalian.Designer.cs">
+      <DependentUpon>Pengembalian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TambahAnggota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TambahAnggota.Designer.cs">
+      <DependentUpon>TambahAnggota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TambahBuku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TambahBuku.Designer.cs">
+      <DependentUpon>TambahBuku.cs</DependentUpon>
+    </Compile>
     <Compile Include="Peminjaman.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,8 +104,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Buku.resx">
+      <DependentUpon>Buku.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Anggota.resx">
+      <DependentUpon>Anggota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profil.resx">
+      <DependentUpon>Profil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pengembalian.resx">
+      <DependentUpon>Pengembalian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TambahAnggota.resx">
+      <DependentUpon>TambahAnggota.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -86,6 +137,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TambahBuku.resx">
+      <DependentUpon>TambahBuku.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

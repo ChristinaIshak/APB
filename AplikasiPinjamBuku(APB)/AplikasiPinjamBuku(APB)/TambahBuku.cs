@@ -10,18 +10,23 @@ using System.Windows.Forms;
 
 namespace AplikasiPinjamBuku_APB_
 {
-    public partial class Peminjaman : Form
+    public partial class TambahBuku : Form
     {
-        public Peminjaman()
+        public TambahBuku()
         {
             InitializeComponent();
         }
 
-        private void labelLogout_Click(object sender, EventArgs e)
+        private void labelBuku_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Login panggil = new Login();
+            Buku panggil = new Buku();
             panggil.Show();
+        }
+
+        private void labelPengembalian_Click(object sender, EventArgs e)
+        {
+            
         }
 
         private void labelPeminjaman_Click(object sender, EventArgs e)
@@ -38,14 +43,14 @@ namespace AplikasiPinjamBuku_APB_
             panggil.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void labelLogout_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Peminjaman panggil = new Peminjaman();
+            Login panggil = new Login();
             panggil.Show();
         }
 
-        private void labelBuku_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
             Buku panggil = new Buku();
@@ -57,11 +62,6 @@ namespace AplikasiPinjamBuku_APB_
             this.Hide();
             Anggota panggil = new Anggota();
             panggil.Show();
-        }
-
-        private void labelPengembalian_Click(object sender, EventArgs e)
-        {
-            
         }
     }
 }
