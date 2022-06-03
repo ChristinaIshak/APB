@@ -51,5 +51,12 @@ namespace AplikasiPinjamBuku_APB_
             Anggota panggil = new Anggota();
             panggil.Show();
         }
+
+        private void labelPengembalian_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Pengembalian panggil = new Pengembalian();
+            panggil.Show();
+        }
     }
 }

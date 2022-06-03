@@ -104,6 +104,7 @@
             this.labelLogout.Size = new System.Drawing.Size(46, 13);
             this.labelLogout.TabIndex = 39;
             this.labelLogout.Text = "Logout";
+            this.labelLogout.Click += new System.EventHandler(this.labelLogout_Click);
             // 
             // pictureBox12
             // 
@@ -125,6 +126,7 @@
             this.labelBuku.Size = new System.Drawing.Size(36, 13);
             this.labelBuku.TabIndex = 38;
             this.labelBuku.Text = "Buku";
+            this.labelBuku.Click += new System.EventHandler(this.labelBuku_Click);
             // 
             // pictureBox10
             // 
@@ -146,6 +148,7 @@
             this.labelAnggota.Size = new System.Drawing.Size(54, 13);
             this.labelAnggota.TabIndex = 37;
             this.labelAnggota.Text = "Anggota";
+            this.labelAnggota.Click += new System.EventHandler(this.labelAnggota_Click);
             // 
             // pictureBox7
             // 
@@ -167,6 +170,7 @@
             this.labelPengembalian.Size = new System.Drawing.Size(86, 13);
             this.labelPengembalian.TabIndex = 36;
             this.labelPengembalian.Text = "Pengembalian";
+            this.labelPengembalian.Click += new System.EventHandler(this.labelPengembalian_Click);
             // 
             // pictureBox5
             // 
@@ -316,6 +320,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // button1
             // 
@@ -328,6 +333,7 @@
             this.button1.TabIndex = 41;
             this.button1.Text = "Tambah";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel3
             // 

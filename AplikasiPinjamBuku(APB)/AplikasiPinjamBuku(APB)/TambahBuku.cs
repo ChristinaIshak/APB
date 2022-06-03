@@ -52,6 +52,7 @@ namespace AplikasiPinjamBuku_APB_
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             this.Hide();
             Buku panggil = new Buku();
             panggil.Show();

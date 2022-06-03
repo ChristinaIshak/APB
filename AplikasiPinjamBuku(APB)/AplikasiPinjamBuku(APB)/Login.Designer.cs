@@ -31,7 +31,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -53,7 +52,7 @@
             this.button1.BackColor = System.Drawing.Color.MediumBlue;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(527, 352);
+            this.button1.Location = new System.Drawing.Point(527, 328);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(69, 27);
             this.button1.TabIndex = 7;
@@ -74,25 +73,14 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.textBox2);
             this.panel3.Controls.Add(this.textBox1);
             this.panel3.Location = new System.Drawing.Point(125, 171);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(471, 153);
+            this.panel3.Size = new System.Drawing.Size(471, 126);
             this.panel3.TabIndex = 5;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(350, 124);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(99, 15);
-            this.label10.TabIndex = 4;
-            this.label10.Text = "Lupa Password?";
             // 
             // label8
             // 
@@ -248,7 +236,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox2;

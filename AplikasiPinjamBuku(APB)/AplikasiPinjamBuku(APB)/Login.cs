@@ -1,45 +1,54 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MySql.Data.MySqlClient;
+using System;
+using System.Configuration;
 using System.Windows.Forms;
-using System.Data.SqlClient;
+
 
 namespace AplikasiPinjamBuku_APB_
 {
+
     public partial class Login : Form
     {
-       
-        
+        string ConnectionString = "datasource=127.0.0.1;port=3306;username=root;password=;database=apb";
+
         public Login()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public void login()
         {
-            if (textBox1.Text == "Admin1")
+            string query = "SELECT * FROM petugas WHERE username='" + textBox1.Text + "' AND pass_petugas='" + textBox2.Text + "'";
+            MySqlConnection databaseConnection = new MySqlConnection(ConnectionString);
+            MySqlCommand commandDatabase = new MySqlCommand(query, databaseConnection);
+            commandDatabase.CommandTimeout = 60;
+            MySqlDataReader reader;
+
+
+            databaseConnection.Open();
+            reader = commandDatabase.ExecuteReader();
+
+            if (reader.HasRows)
             {
-                if (textBox2.Text == "12345678")
+                while (reader.Read())
                 {
-                    this.Hide();
+                    MessageBox.Show("Berhasil Login Ke Dashboard");
                     Dashboard panggil = new Dashboard();
                     panggil.Show();
-                }
-                else
-                {
-                    MessageBox.Show("Maaf Username atau Password anda salah!", "Perhatian", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    this.Hide();
                 }
             }
-            
             else
             {
-                MessageBox.Show("Maaf Username atau Password anda salah!", "Perhatian", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Username atau Password Salah");
             }
+            databaseConnection.Close();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            login();
         }
     }
 }

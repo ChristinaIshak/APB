@@ -158,6 +158,7 @@
             this.labelAnggota.Size = new System.Drawing.Size(54, 13);
             this.labelAnggota.TabIndex = 37;
             this.labelAnggota.Text = "Anggota";
+            this.labelAnggota.Click += new System.EventHandler(this.labelAnggota_Click);
             // 
             // pictureBox7
             // 
@@ -179,6 +180,7 @@
             this.labelPengembalian.Size = new System.Drawing.Size(86, 13);
             this.labelPengembalian.TabIndex = 36;
             this.labelPengembalian.Text = "Pengembalian";
+            this.labelPengembalian.Click += new System.EventHandler(this.labelPengembalian_Click);
             // 
             // pictureBox5
             // 

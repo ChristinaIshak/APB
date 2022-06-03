@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Profil));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.labelLogout = new System.Windows.Forms.Label();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.labelBuku = new System.Windows.Forms.Label();
@@ -50,11 +48,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -72,13 +71,13 @@
             this.label15 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -112,25 +111,6 @@
             this.panel1.Size = new System.Drawing.Size(124, 512);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Silver;
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(124, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(596, 36);
-            this.panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Silver;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(124, 498);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(596, 14);
-            this.panel3.TabIndex = 2;
-            // 
             // labelLogout
             // 
             this.labelLogout.AutoSize = true;
@@ -141,6 +121,7 @@
             this.labelLogout.Size = new System.Drawing.Size(46, 13);
             this.labelLogout.TabIndex = 39;
             this.labelLogout.Text = "Logout";
+            this.labelLogout.Click += new System.EventHandler(this.labelLogout_Click);
             // 
             // pictureBox12
             // 
@@ -162,6 +143,7 @@
             this.labelBuku.Size = new System.Drawing.Size(36, 13);
             this.labelBuku.TabIndex = 38;
             this.labelBuku.Text = "Buku";
+            this.labelBuku.Click += new System.EventHandler(this.labelBuku_Click);
             // 
             // pictureBox10
             // 
@@ -183,6 +165,7 @@
             this.labelAnggota.Size = new System.Drawing.Size(54, 13);
             this.labelAnggota.TabIndex = 37;
             this.labelAnggota.Text = "Anggota";
+            this.labelAnggota.Click += new System.EventHandler(this.labelAnggota_Click);
             // 
             // pictureBox7
             // 
@@ -204,6 +187,7 @@
             this.labelPengembalian.Size = new System.Drawing.Size(86, 13);
             this.labelPengembalian.TabIndex = 36;
             this.labelPengembalian.Text = "Pengembalian";
+            this.labelPengembalian.Click += new System.EventHandler(this.labelPengembalian_Click);
             // 
             // pictureBox5
             // 
@@ -225,6 +209,7 @@
             this.labelPeminjaman.Size = new System.Drawing.Size(74, 13);
             this.labelPeminjaman.TabIndex = 27;
             this.labelPeminjaman.Text = "Peminjaman";
+            this.labelPeminjaman.Click += new System.EventHandler(this.labelPeminjaman_Click);
             // 
             // pictureBox3
             // 
@@ -246,6 +231,7 @@
             this.labelDashboard.Size = new System.Drawing.Size(59, 12);
             this.labelDashboard.TabIndex = 24;
             this.labelDashboard.Text = "Dashboard";
+            this.labelDashboard.Click += new System.EventHandler(this.labelDashboard_Click);
             // 
             // pictureBox2
             // 
@@ -323,6 +309,16 @@
             this.label1.TabIndex = 30;
             this.label1.Text = "A";
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Silver;
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(124, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(596, 36);
+            this.panel2.TabIndex = 1;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -332,6 +328,15 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Silver;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(124, 498);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(596, 14);
+            this.panel3.TabIndex = 2;
             // 
             // textBox5
             // 
@@ -360,18 +365,6 @@
             this.textBox6.Size = new System.Drawing.Size(185, 20);
             this.textBox6.TabIndex = 51;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.MediumBlue;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(264, 351);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 27);
-            this.button1.TabIndex = 50;
-            this.button1.Text = "Edit Password";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -392,6 +385,7 @@
             this.label7.Size = new System.Drawing.Size(51, 22);
             this.label7.TabIndex = 39;
             this.label7.Text = "Profil";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // pictureBox4
             // 
@@ -410,6 +404,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(277, 20);
             this.textBox1.TabIndex = 68;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -418,6 +413,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(277, 20);
             this.textBox2.TabIndex = 66;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // button2
             // 
@@ -430,6 +426,7 @@
             this.button2.TabIndex = 65;
             this.button2.Text = "Edit Profil";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox4
             // 
@@ -438,6 +435,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(277, 20);
             this.textBox4.TabIndex = 61;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // textBox3
             // 
@@ -446,6 +444,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(277, 20);
             this.textBox3.TabIndex = 60;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label16
             // 
@@ -457,6 +456,7 @@
             this.label16.Size = new System.Drawing.Size(83, 15);
             this.label16.TabIndex = 57;
             this.label16.Text = "Tanggal Lahir";
+            this.label16.Click += new System.EventHandler(this.label16_Click);
             // 
             // label17
             // 
@@ -468,6 +468,7 @@
             this.label17.Size = new System.Drawing.Size(89, 15);
             this.label17.TabIndex = 56;
             this.label17.Text = "Nama Petugas";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // textBox8
             // 
@@ -476,6 +477,7 @@
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(277, 20);
             this.textBox8.TabIndex = 55;
+            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // pictureBox6
             // 
@@ -486,6 +488,7 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 54;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // label11
             // 
@@ -497,6 +500,7 @@
             this.label11.Size = new System.Drawing.Size(93, 15);
             this.label11.TabIndex = 71;
             this.label11.Text = "Nomor Telepon";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label12
             // 
@@ -508,6 +512,7 @@
             this.label12.Size = new System.Drawing.Size(85, 15);
             this.label12.TabIndex = 72;
             this.label12.Text = "Jenis Kelamin";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label15
             // 
@@ -519,6 +524,7 @@
             this.label15.Size = new System.Drawing.Size(45, 15);
             this.label15.TabIndex = 73;
             this.label15.Text = "Alamat";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // pictureBox8
             // 
@@ -530,7 +536,7 @@
             this.pictureBox8.TabIndex = 2;
             this.pictureBox8.TabStop = false;
             // 
-            // Form1
+            // Profil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -551,7 +557,6 @@
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox4);
@@ -559,17 +564,17 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "Profil";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
@@ -606,7 +611,6 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox4;
