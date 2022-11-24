@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "901203700810",
+    "project_id": "authentication-demo-dad68",
+    "storage_bucket": "authentication-demo-dad68.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:901203700810:android:309b23501a09beb8a34ab3",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_antrian"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "901203700810-uu9ald17efptp5ermic79iibp2au0sil.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQT2Olx1FOnLYz4_t2tPXx1PoBNjjjbvY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "901203700810-uu9ald17efptp5ermic79iibp2au0sil.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
